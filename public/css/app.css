@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@charset "UTF-8";
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
@@ -10880,5 +10880,48 @@ a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+
+/* Fonts **/
+
+.home .hero {
+  background-image: url("/images/Hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.home .navigation {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.home .navigation .logo {
+  width: 15em;
+}
+
+.home .navigation .nav-item-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home .navigation .nav-item {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 0 0 2em;
+  font-size: 1.3em;
+  font-family: "Times Sans Serif", sans-serif;
+}
+
+.home .hero .hero-title {
+  margin: 2em 0;
+  display: flex;
+  justify-content: center;
+  font-size: 6em;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
 }
 

@@ -8,7 +8,7 @@
   }
 
   .navigation {
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.3);
     .logo {
       width: 15em;
     }
@@ -22,6 +22,16 @@
       margin: 0 0 0 2em;
       font-size: 1.3em;
       font-family: $primary-font;
+    }
+  }
+
+  .hero {
+    .hero-title {
+      margin: 2em 0;
+      display: flex;
+      justify-content: center;
+      font-size: 6em;
+      font-family: $title-font;
     }
   }
 }

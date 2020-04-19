@@ -1,11 +1,11 @@
 <template>
     <nav class="navigation">
         <div class="container">
-            <div class="columns is-vcentered">
-                <div class="column">
+            <div class="row align-items-center">
+                <div class="col">
                     <img src="/images/Logo.png" class="logo" alt="Virac Special Logo">
                 </div>
-                <div class="column is-three-fifths">
+                <div class="col">
                     <div class="nav-item-container">
                         <a href="/" class="nav-item">Home</a>
                         <a href="/" class="nav-item">Destinations</a>
