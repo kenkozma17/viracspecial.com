@@ -1,0 +1,13 @@
+body, html {
+  margin: 0;
+  font-family: HomizioNova-Regular, sans-serif;
+}
+
+.main {
+  opacity: 0;
+  &.show {
+    @include page-transition();
+    transition-delay: 0.5s;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,4 @@
+// Page transitions
+@mixin page-transition() {
+  transition: 1s ease opacity;
+}

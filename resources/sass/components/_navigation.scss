@@ -1,0 +1,50 @@
+.navigation {
+  position: absolute;
+  width: 100%;
+  padding: 1.5em 0;
+  z-index: 1;
+  .navigation-items {
+    display: flex;
+    justify-content: flex-end;
+    .navigation-item {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.15em;
+      padding: 0 1.5em;
+      &::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #fff;
+        transition: width .2s;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+      &.router-link-exact-active::after {
+        width: 100%;
+      }
+    }
+  }
+
+  .navigation-container {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1300px;
+  }
+
+  .row {
+    width: 100%;
+    align-items: center;
+  }
+  .logo-container {
+    display: flex;
+    justify-content: flex-start;
+    .logo {
+      height: 170px;
+    }
+  }
+
+}

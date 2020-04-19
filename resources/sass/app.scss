@@ -1,1 +1,17 @@
-//
+// Mixins
+@import "mixins/transitions";
+
+// Partials
+@import "partials/typography";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Components
+@import "components/ocean-loader";
+@import "components/navigation";
+
+// Pages
+@import "pages/home";
+
+@import "globals";
