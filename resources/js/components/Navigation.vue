@@ -8,6 +8,7 @@
                 <div class="col-8 navigation-items">
                     <router-link class="navigation-item" :to="{ name: 'home' }">Home</router-link>
                     <router-link class="navigation-item" :to="{ name: 'about' }">About</router-link>
+                    <router-link class="navigation-item" :to="{ name: 'blog' }">Blog</router-link>
                 </div>
             </div>
         </div>

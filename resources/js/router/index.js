@@ -1,5 +1,6 @@
 import Home from '../views/Home.vue';
 import About from '../views/About.vue';
+import Blog from '../views/Blog.vue';
 
 export default {
     mode: 'history',
@@ -14,6 +15,11 @@ export default {
             path: '/about',
             name: 'about',
             component: About
+        },
+        {
+            path: '/blog',
+            name: 'blog',
+            component: Blog
         }
     ]
 }
