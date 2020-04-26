@@ -11,7 +11,7 @@
 |
 */
 
-Route::view('/{any}', 'app')->where('any', '.*');
+Route::view('/{any}', 'app')->where('any', '^(?!api\/)[\/\w\.-]*');
 
 Auth::routes();
 

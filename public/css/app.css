@@ -11002,6 +11002,7 @@ a.text-dark:focus {
   width: 100%;
   padding: 1.5em 0;
   z-index: 1;
+  top: 0;
 }
 
 .navigation .navigation-items {

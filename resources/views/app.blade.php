@@ -12,14 +12,13 @@
     <body>
         <main id="app">
             <div :class="'main ' + (isLoaded ? 'show' : '')">
+                <admin-menu></admin-menu>
+{{--                <navigation></navigation>--}}
                 <div>
-                    <navigation></navigation>
-                    <div>
-                        <router-view></router-view>
-                    </div>
+                    <router-view></router-view>
                 </div>
             </div>
-            <ocean-loader :class="isLoaded ? 'hide' : ''"></ocean-loader>
+{{--            <ocean-loader :class="isLoaded ? 'hide' : ''"></ocean-loader>--}}
         </main>
 
         <script src="/js/app.js"></script>
