@@ -10892,33 +10892,34 @@ a.text-dark:focus {
   width: 100%;
 }
 
-.home .navigation {
-  background: rgba(0, 0, 0, 0.3);
+.home .hero .hero-title {
+  display: flex;
+  justify-content: center;
+  font-size: 6em;
+  font-family: "Montserrat", sans-serif;
 }
 
-.home .navigation .logo {
+.navigation {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+}
+
+.navigation .logo {
   width: 15em;
 }
 
-.home .navigation .nav-item-container {
+.navigation .nav-item-container {
   display: flex;
   justify-content: flex-end;
 }
 
-.home .navigation .nav-item {
+.navigation .nav-item {
   text-decoration: none;
   color: #fff;
   margin: 0 0 0 2em;
   font-size: 1.3em;
   font-family: "Times Sans Serif", sans-serif;
-}
-
-.home .hero .hero-title {
-  margin: 2em 0;
-  display: flex;
-  justify-content: center;
-  font-size: 6em;
-  font-family: "Montserrat", sans-serif;
 }
 
 body {

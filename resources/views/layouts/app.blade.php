@@ -21,6 +21,10 @@
 </head>
 <body>
     <div id="app">
+        @if(!Auth::check() && !Request::is('login'))
+            <navigation></navigation>
+        @endif
+
         @yield('content')
     </div>
 </body>

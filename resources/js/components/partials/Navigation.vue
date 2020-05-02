@@ -8,8 +8,6 @@
                 <div class="col">
                     <div class="nav-item-container">
                         <a href="/" class="nav-item">Home</a>
-                        <a href="/" class="nav-item">Destinations</a>
-                        <a href="/" class="nav-item">Team</a>
                         <a href="/" class="nav-item">Blog</a>
                         <a href="/" class="nav-item">Contact Us</a>
                     </div>
