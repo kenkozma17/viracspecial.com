@@ -19,3 +19,7 @@ Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::group([ 'prefix' => 'auth', 'middleware' => 'auth', 'namespace' => 'Admin'], function() {
+    Route::resource('blog', 'BlogController');
+});
+

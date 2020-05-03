@@ -25,6 +25,9 @@
             <navigation></navigation>
         @endif
 
+        {{-- Form Messages --}}
+        @include('admin.notifications.form-messages')
+
         @yield('content')
     </div>
 </body>
