@@ -11,6 +11,9 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    @if (Auth::check())
+        <script src="{{ config('cdn.ckeditor-js')  }}"></script>
+    @endif
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -30,5 +33,10 @@
 
         @yield('content')
     </div>
+
+    {{--  Jquery for Admin Side  --}}
+    @if (Auth::check())
+        <script src="{{ config('cdn.jquery') }}"></script>
+    @endif
 </body>
 </html>

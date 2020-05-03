@@ -19,8 +19,10 @@ class CreateBlogPostsTable extends Migration
             $table->string('url_slug')->nullable();
             $table->text('summary')->nullable();
             $table->text('content')->nullable();
-            $table->string('image')->default('/images/blog-placeholder.jpg');
+            $table->string('image')->default('/images/blog-placeholder.jpg')->nullable();
+            $table->string('local_author')->nullable();
             $table->datetime('published_date')->nullable();
+            $table->boolean('published')->default(0);
 
             $table->bigInteger('user_id')->unsigned()->nullable();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');

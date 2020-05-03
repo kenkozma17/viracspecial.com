@@ -4,13 +4,23 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Blog;
+use App\User;
 use Illuminate\Support\Facades\Validator;
 use Exception;
+use App\Http\Controllers\Repositories\BlogRepo;
 
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
 {
+
+    protected $blogRepo;
+
+    public function __construct(BlogRepo $blogRepo)
+    {
+        $this->blogRepo = $blogRepo;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -82,7 +92,8 @@ class BlogController extends Controller
     public function edit($id)
     {
         $blogPost = Blog::find($id);
-        return view('admin.blog.edit')->with('blogPost', $blogPost);
+        $users = User::all();
+        return view('admin.blog.edit')->with(['blogPost' => $blogPost, 'users' => $users]);
     }
 
     /**
@@ -94,7 +105,27 @@ class BlogController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->all();
+        $validator = Validator::make($data, [
+            'title' => 'required|unique:blog_posts,id,' . $id,
+            'content' => 'required'
+        ]);
+
+        if($validator->fails()) {
+            return redirect()->back()->withErrors($validator)->withInput();
+        }
+
+        $data['url_slug'] = $this->blogRepo->createSlug($data['title']);
+        isset($data['published']) ? $data['published'] = 1 : $data['published'] = 0;
+        if(!isset($data['image'])) { unset($data['image']); }
+
+        $blogPost = Blog::find($id);
+        $blogPost->fill($data);
+        $blogPost->save();
+
+        return redirect('auth/blog/'. $blogPost->id .'/edit')
+            ->with('successMessage', 'Blog Post has been updated!');
+
     }
 
     /**
