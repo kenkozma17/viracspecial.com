@@ -6,7 +6,7 @@
         <div class="card">
             <div class="card-body">
                 <h2>Edit Blog Post</h2>
-                <form action="/auth/blog/{{ $blogPost->id }}" method="POST">
+                <form action="/auth/blog/{{ $blogPost->id }}" method="POST" enctype="multipart/form-data">
                     {{ method_field('PUT') }}
                     @csrf
                     <div class="form-group">
@@ -41,6 +41,14 @@
                         </div>
                     </div>
 
+                    @if ($blogPost->image)
+                        <div class="form-group mt-3 mb-3">
+                            <label for="image preview">Current Cover Image/Thumbnail</label>
+                            <div>
+                                <img class="image-preview" src="{{ $blogPost->image }}" >
+                            </div>
+                        </div>
+                    @endif
 
                     <div class="row">
                         <div class="col-6">

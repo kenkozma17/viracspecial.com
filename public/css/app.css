@@ -10922,6 +10922,10 @@ a.text-dark:focus {
   font-family: "Times Sans Serif", sans-serif;
 }
 
+.admin .image-preview {
+  width: 50%;
+}
+
 body {
   margin: 0;
 }

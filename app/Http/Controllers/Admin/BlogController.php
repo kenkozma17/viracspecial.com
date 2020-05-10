@@ -8,6 +8,7 @@ use App\User;
 use Illuminate\Support\Facades\Validator;
 use Exception;
 use App\Http\Controllers\Repositories\BlogRepo;
+use App\Http\Controllers\Repositories\ImageUploader;
 
 use Illuminate\Http\Request;
 
@@ -16,9 +17,10 @@ class BlogController extends Controller
 
     protected $blogRepo;
 
-    public function __construct(BlogRepo $blogRepo)
+    public function __construct(BlogRepo $blogRepo, ImageUploader $imageUploader)
     {
         $this->blogRepo = $blogRepo;
+        $this->imageUplaoder = $imageUploader;
     }
 
     /**
@@ -117,7 +119,16 @@ class BlogController extends Controller
 
         $data['url_slug'] = $this->blogRepo->createSlug($data['title']);
         isset($data['published']) ? $data['published'] = 1 : $data['published'] = 0;
-        if(!isset($data['image'])) { unset($data['image']); }
+        if(!isset($data['published_date'])) {
+          unset($data['published_date']);
+        }
+
+        # Image upload
+        if(isset($data['image'])) {
+            $data['image'] = $this->imageUplaoder->uploadImage($data['image'], 'blog');
+        } else {
+            unset($data['image']);
+        }
 
         $blogPost = Blog::find($id);
         $blogPost->fill($data);
