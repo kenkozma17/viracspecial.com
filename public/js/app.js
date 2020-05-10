@@ -37625,9 +37625,11 @@ var staticRenderFns = [
                 _vm._v("Home")
               ]),
               _vm._v(" "),
-              _c("a", { staticClass: "nav-item", attrs: { href: "/" } }, [
-                _vm._v("Blog")
-              ]),
+              _c(
+                "a",
+                { staticClass: "nav-item", attrs: { href: "/vs-blog" } },
+                [_vm._v("Blog")]
+              ),
               _vm._v(" "),
               _c("a", { staticClass: "nav-item", attrs: { href: "/" } }, [
                 _vm._v("Contact Us")

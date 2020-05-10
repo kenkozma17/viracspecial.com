@@ -8,7 +8,7 @@
                 <div class="col">
                     <div class="nav-item-container">
                         <a href="/" class="nav-item">Home</a>
-                        <a href="/" class="nav-item">Blog</a>
+                        <a href="/vs-blog" class="nav-item">Blog</a>
                         <a href="/" class="nav-item">Contact Us</a>
                     </div>
                 </div>

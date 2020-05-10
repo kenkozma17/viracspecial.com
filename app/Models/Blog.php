@@ -8,7 +8,7 @@ class Blog extends Model
 {
     protected $table = 'blog_posts';
     protected $fillable = ['title', 'url_slug', 'summary', 'content', 'image', 'published_date', 'published', 'user_id', 'local_author'];
-    protected $appends = ['author_name'];
+    protected $appends = ['author_name', 'post_date'];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
@@ -23,5 +23,15 @@ class Blog extends Model
             return $this->author->name;
         }
         return null;
+    }
+
+    public function getPostDateAttribute() {
+        $date = $this->created_at;
+        if($this->published_date) {
+            $date = $this->published_date;
+        }
+
+        $date = date("d M, Y", strtotime($date));
+        return $date;
     }
 }

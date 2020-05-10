@@ -25,13 +25,15 @@
 <body>
     <div id="app">
         @if(!Auth::check() && !Request::is('login'))
-            <navigation></navigation>
+        <navigation></navigation>
         @endif
 
         {{-- Form Messages --}}
         @include('admin.notifications.form-messages')
 
-        @yield('content')
+            <div class="content-mt">
+                @yield('content')
+            </div>
     </div>
 
     {{--  Jquery for Admin Side  --}}

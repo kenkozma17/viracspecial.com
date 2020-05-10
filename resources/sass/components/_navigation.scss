@@ -2,8 +2,11 @@
   background: rgba(0, 0, 0, 0.3);
   position: fixed;
   width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
   .logo {
-    width: 15em;
+    width: 9em;
   }
   .nav-item-container {
     display: flex;

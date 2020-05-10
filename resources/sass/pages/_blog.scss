@@ -1,0 +1,70 @@
+.blog.list {
+  .image {
+    width: 100%;
+  }
+
+  .card-holder {
+    &:hover {
+
+    }
+  }
+
+  .image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+  }
+
+  .read-more {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    padding: 0.2em 1em;
+    background: white;
+    color: #000;
+    border-radius: 30px;
+  }
+
+  .title-container {
+    position: absolute;
+    bottom: 1.5em; left: 2em;
+    color: #fff;
+    .title {
+      font-size: 1.8em;
+    }
+    .title, .author {
+      position: relative;
+    }
+  }
+
+  .pagination {
+    margin: 4em 0 0 0;
+    justify-content: center;
+  }
+}
+
+.blog.detail-page {
+  .cover-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .article {
+    padding: 0 5em;
+    background: #fff;
+    margin: 0 3em;
+    .title {
+      padding: 1em 0 0.5em 0;
+      text-align: center;
+    }
+    .details {
+      display: flex;
+      justify-content: center;
+      & > div {
+        padding: 0 1em;
+      }
+    }
+  }
+}

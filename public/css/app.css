@@ -10899,14 +10899,86 @@ a.text-dark:focus {
   font-family: "Montserrat", sans-serif;
 }
 
+.blog.list .image {
+  width: 100%;
+}
+
+.blog.list .image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+}
+
+.blog.list .read-more {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  padding: 0.2em 1em;
+  background: white;
+  color: #000;
+  border-radius: 30px;
+}
+
+.blog.list .title-container {
+  position: absolute;
+  bottom: 1.5em;
+  left: 2em;
+  color: #fff;
+}
+
+.blog.list .title-container .title {
+  font-size: 1.8em;
+}
+
+.blog.list .title-container .title,
+.blog.list .title-container .author {
+  position: relative;
+}
+
+.blog.list .pagination {
+  margin: 4em 0 0 0;
+  justify-content: center;
+}
+
+.blog.detail-page .cover-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.blog.detail-page .article {
+  padding: 0 5em;
+  background: #fff;
+  margin: 0 3em;
+}
+
+.blog.detail-page .article .title {
+  padding: 1em 0 0.5em 0;
+  text-align: center;
+}
+
+.blog.detail-page .article .details {
+  display: flex;
+  justify-content: center;
+}
+
+.blog.detail-page .article .details > div {
+  padding: 0 1em;
+}
+
 .navigation {
   background: rgba(0, 0, 0, 0.3);
   position: fixed;
   width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
 }
 
 .navigation .logo {
-  width: 15em;
+  width: 9em;
 }
 
 .navigation .nav-item-container {
@@ -10928,5 +11000,9 @@ a.text-dark:focus {
 
 body {
   margin: 0;
+}
+
+.content-mt {
+  margin-top: 10em;
 }
 

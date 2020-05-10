@@ -19,6 +19,10 @@ Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+# Blog
+Route::get('vs-blog', 'BlogController@index');
+Route::get('vs-blog/{url}', 'BlogController@singlePost');
+
 Route::group([ 'prefix' => 'auth', 'middleware' => 'auth', 'namespace' => 'Admin'], function() {
     Route::resource('blog', 'BlogController');
 });

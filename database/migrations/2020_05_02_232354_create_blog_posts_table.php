@@ -16,7 +16,7 @@ class CreateBlogPostsTable extends Migration
         Schema::create('blog_posts', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
-            $table->string('url_slug')->nullable();
+            $table->string('url_slug')->nullable()->unique();
             $table->text('summary')->nullable();
             $table->text('content')->nullable();
             $table->string('image')->default('/images/blog-placeholder.jpg')->nullable();
