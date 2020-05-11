@@ -23,7 +23,7 @@
                     @foreach ($posts as $post)
                         <tr>
                             <th scope="row">
-                                <a href="#" class="btn btn-primary">Edit</a>
+                                <a href="/vs-blog/{{ $post->id }}/edit" class="btn btn-primary">Edit</a>
                             </th>
                             <td>{{ $post->title }}</td>
                             <td>{{ $post->published }}</td>
