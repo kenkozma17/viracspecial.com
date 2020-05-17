@@ -11,7 +11,6 @@
                     <div class="nav-item-container">
                         <a href="/" class="nav-item">Home</a>
                         <a href="/vs-blog" class="nav-item">Blog</a>
-                        <a href="/" class="nav-item">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -26,10 +25,15 @@
         methods: {
             stickyNav() {
                 let nav = $('.navigation'), scrolled = window.pageYOffset;
-                (scrolled > 100) ? nav.addClass('sticky') : nav.removeClass('sticky');
+                if(window.location.pathname === '/') {
+                    (scrolled > 100) ? nav.addClass('sticky') : nav.removeClass('sticky');
+                } else {
+                    nav.addClass('sticky');
+                }
             }
         },
-        created: function() {
+        mounted: function() {
+            this.stickyNav();
             window.addEventListener('scroll', this.stickyNav);
         }
     }

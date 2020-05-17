@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <div class="container blog detail-page mb-5">
+    <div class="container blog detail-page mb-5 content-mt">
         <img class="cover-image" src="{{ $blogPost->image }}">
         <div class="article pb-5">
             <h2 class="title">{{ $blogPost->title }}</h2>

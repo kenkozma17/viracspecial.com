@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
-    <div class="container blog list">
+    <div class="container blog list content-mt">
+        <div class="title">Latest blog posts</div>
         <div class="row">
             @foreach($blogPosts as $post)
                 <div class="col-sm-6 mt-3 mb-3">

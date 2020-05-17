@@ -31,7 +31,7 @@ class Blog extends Model
             $date = $this->published_date;
         }
 
-        $date = date("d M, Y", strtotime($date));
+        $date = date("M d, Y", strtotime($date));
         return $date;
     }
 }

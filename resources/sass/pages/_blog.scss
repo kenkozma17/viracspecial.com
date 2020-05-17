@@ -1,9 +1,7 @@
 .blog.list {
 
-  .card-holder {
-    &:hover {
-
-    }
+  .title {
+    font: 2em $secondary-font;
   }
 
   .image {
@@ -30,7 +28,7 @@
     bottom: 1.5em; left: 2em;
     color: #fff;
     .title {
-      font-size: 1.8em;
+      font: 1.8em $secondary-font;
     }
     .title, .author {
       position: relative;
@@ -55,6 +53,7 @@
     .title {
       padding: 1em 0 0.5em 0;
       text-align: center;
+      font: 1.8em $secondary-font;
     }
     .details {
       display: flex;

@@ -4,12 +4,15 @@ export default class SwiperSlider {
     constructor() {
         this.fullSliderEl = $('.swiper-fullscreen');
         this.multiSliderEl = $('.swiper-multi');
-        if(this.fullSliderEl.length) {
-            this.fullSlider(this.fullSliderEl);
-        }
-        if(this.multiSliderEl.length) {
-            this.multiSlider(this.multiSliderEl);
-        }
+        let _this = this;
+        setTimeout(function() {
+            if(_this.fullSliderEl.length) {
+                _this.fullSlider(_this.fullSliderEl);
+            }
+            if(_this.multiSliderEl.length) {
+                _this.multiSlider(_this.multiSliderEl);
+            }
+        }, 100);
     }
 
     fullSlider(el) {
