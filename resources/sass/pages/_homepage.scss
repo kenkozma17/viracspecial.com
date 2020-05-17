@@ -1,19 +1,54 @@
 .home {
-  .hero {
-    background-image: url("/images/Hero.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-  }
-
-  .hero {
-    .hero-title {
-      //margin: 2em 0;
-      display: flex;
-      justify-content: center;
-      font-size: 6em;
-      font-family: $title-font;
+  position: relative;
+  .main-title-container {
+    position: absolute;
+    top: 85vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 2;
+    .title {
+      font: 3em $secondary-font;
+      letter-spacing: 1px;
+      @include fluid-type($xsmall-max-bp, $small-min-bp, 1.6em, 3em);
     }
+    .arrow {
+      width: 2em;
+      &.point-down {
+        transform: rotate(90deg);
+      }
+    }
+    .explore-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      transition: 0.2s ease-in all;
+      padding: 1em;
+      background: rgba(128,128,128,0.4);
+      border-radius: 10px;
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+}
+
+.about {
+  padding: 4em 0 0 0;
+  .image {
+    border-radius: 10px;
+  }
+  .title {
+    font: 2em $secondary-font;
+    padding: 0 0 0.5em 0;
+  }
+}
+
+.issues {
+  padding: 4em 0 4em 0;
+  .title {
+    font: 2em $secondary-font;
+    padding: 0 0 0.5em 0;
   }
 }

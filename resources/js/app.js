@@ -3,8 +3,14 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
+import SwiperSlider from "./SwiperSlider";
+
 require('./bootstrap');
 window.Vue = require('vue');
+
+document.addEventListener("DOMContentLoaded", function() {
+    window.Swiper = new SwiperSlider();
+});
 
 /**
  * The following block of code may be used to automatically register your

@@ -25,6 +25,7 @@
     },
     "dependencies": {
         "bulma": "^0.8.2",
+        "swiper": "^5.4.0",
         "vue": "^2.6.11"
     }
 }

@@ -17,23 +17,19 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;800&display=swap" rel="stylesheet">
-    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Muli:300|Patua+One" rel="stylesheet">    <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-</head>
 <body>
     <div id="app">
         @if(!Auth::check() && !Request::is('login'))
         <navigation></navigation>
         @endif
-
         {{-- Form Messages --}}
         @include('admin.notifications.form-messages')
 
-            <div class="content-mt">
-                @yield('content')
-            </div>
+        @yield('content')
+
+        <foot></foot>
     </div>
 
     {{--  Jquery for Admin Side  --}}

@@ -1,3 +1,14 @@
 /* Fonts **/
-$primary-font: 'Times Sans Serif', sans-serif;
-$title-font: 'Montserrat', sans-serif;
+$primary-font: 'Muli', Sans-Serif;
+$secondary-font: 'Patua One', Sans-Serif;
+
+/* Colors **/
+$darker-white: #fafafa;
+
+/* Screen Sizes **/
+$xsmall-min-bp: 450px;
+$xsmall-max-bp: ($xsmall-min-bp - 1);
+$small-min-bp: 769px;
+$small-max-bp: ($small-min-bp - 1);
+$medium-min-bp: 1000px;
+$medium-max-bp: ($medium-min-bp - 1);

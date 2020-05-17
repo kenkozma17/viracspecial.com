@@ -1,7 +1,4 @@
 .blog.list {
-  .image {
-    width: 100%;
-  }
 
   .card-holder {
     &:hover {
@@ -67,4 +64,8 @@
       }
     }
   }
+}
+
+.image {
+  width: 100%;
 }

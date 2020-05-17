@@ -1,0 +1,16 @@
+/**
+	Fluid Type SCSS
+	// example: https://codepen.io/vinsongrant/pen/EpVEyy
+	// usage : @include fluid-type($small-min-bp, 1500px, 25px, 65px);
+**/
+@mixin fluid-type($min-vw, $max-vw, $min-value, $max-value) {
+  font-size: $min-value;
+
+  @media screen and (min-width: $min-vw) {
+    font-size: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+  }
+
+  @media screen and (min-width: $max-vw) {
+    font-size: $max-value;
+  }
+}

@@ -1,0 +1,8 @@
+/* Media Queries **/
+@mixin mq-max($size: $small-max-bp) {
+  @media (max-width: #{$size}) { @content; }
+}
+
+@mixin mq-min($size: $small-min-bp) {
+  @media (min-width: #{$size}) { @content; }
+}
