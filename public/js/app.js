@@ -47257,7 +47257,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("section", {
     staticClass: "footer",
-    staticStyle: { "background-image": "url(/images/footer-bg.jpg)" }
+    staticStyle: { "background-image": "url(/images/aerial-ocean.jpg)" }
   })
 }
 var staticRenderFns = []

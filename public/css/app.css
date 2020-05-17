@@ -11624,10 +11624,11 @@ a.text-dark:focus {
 }
 
 .footer {
-  min-height: 50vh;
+  min-height: 80vh;
   width: 100%;
   background-size: cover;
-  background-position: 50% 43%;
+  transform: rotate(180deg);
+  background-position: bottom;
 }
 
 a:hover {
@@ -11637,7 +11638,7 @@ a:hover {
 body {
   margin: 0;
   font-family: "Muli", Sans-Serif;
-  background: #fefefe;
+  background: #F9F9F9;
 }
 
 .content-mt {
