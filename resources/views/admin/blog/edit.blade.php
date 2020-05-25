@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 @extends('auth.nav')
-<div class="admin blog">
+<div class="admin blog edit">
     <div class="container mt-lg-5 mb-lg-5">
         <div class="card">
             <div class="card-body">
@@ -74,6 +74,11 @@
                             </div>
                         </div>
                     </div>
+
+                    <category-manager
+                            :post-categories='@json($blogPost->categories)'
+                            :categories='@json($categories)'>
+                    </category-manager>
 
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" {{ $blogPost->published ? 'checked' : '' }} name="published">

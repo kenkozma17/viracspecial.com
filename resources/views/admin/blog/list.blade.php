@@ -15,6 +15,7 @@
                     <tr>
                         <th scope="col">Actions</th>
                         <th scope="col">Title</th>
+                        <th scope="col">Categories</th>
                         <th scope="col">Published</th>
                     </tr>
                 </thead>
@@ -23,10 +24,15 @@
                     @foreach ($posts as $post)
                         <tr>
                             <th scope="row">
-                                <a href="/vs-blog/{{ $post->id }}/edit" class="btn btn-primary">Edit</a>
+                                <a href="/auth/blog/{{ $post->id }}/edit" class="btn btn-primary">Edit</a>
                             </th>
                             <td>{{ $post->title }}</td>
-                            <td>{{ $post->published }}</td>
+                            <td>
+                                @foreach($post->categories as $tag)
+                                    <span class="badge badge-pill badge-primary">{{ $tag->name }}</span>
+                                @endforeach
+                            </td>
+                            <td>{!! $post->published ? '<span class="badge badge-pill badge-success">Yes</span>' : '<span class="badge badge-pill badge-danger">No</span>' !!}</td>
                         </tr>
                     @endforeach
                 @else

@@ -11574,6 +11574,21 @@ a.text-dark:focus {
   padding: 0 1em;
 }
 
+.blog.edit .category-badge {
+  font-size: 1em;
+  color: #fff;
+  cursor: pointer;
+  margin: 0.25em;
+}
+
+.blog.edit .category-holder {
+  padding: 0 0.5em;
+}
+
+.blog.edit .close-btn {
+  cursor: pointer;
+}
+
 .image {
   width: 100%;
 }

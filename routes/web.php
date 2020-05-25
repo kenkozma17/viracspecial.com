@@ -25,5 +25,6 @@ Route::get('vs-blog/{url}', 'BlogController@singlePost');
 
 Route::group([ 'prefix' => 'auth', 'middleware' => 'auth', 'namespace' => 'Admin'], function() {
     Route::resource('blog', 'BlogController');
+    Route::resource('category', 'CategoryController');
 });
 

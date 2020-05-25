@@ -18,6 +18,10 @@ class Blog extends Model
         return $this->belongsTo('App\User', 'user_id');
     }
 
+    public function categories() {
+        return $this->belongsToMany('App\Models\Category', 'blog_post_categories', 'post_id');
+    }
+
     public function getAuthorNameAttribute() {
         if(parent::has('author')->get()) {
             return $this->author->name;

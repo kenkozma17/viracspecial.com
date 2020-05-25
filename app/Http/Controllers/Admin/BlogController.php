@@ -4,11 +4,13 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Blog;
+use App\Models\Category;
 use App\User;
 use Illuminate\Support\Facades\Validator;
 use Exception;
 use App\Http\Controllers\Repositories\BlogRepo;
 use App\Http\Controllers\Repositories\ImageUploader;
+use Illuminate\Support\Str;
 
 use Illuminate\Http\Request;
 
@@ -30,7 +32,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $posts = Blog::orderBy('created_at', 'asc')->get();
+        $posts = Blog::orderBy('created_at', 'asc')->with('categories')->get();
         return view('admin.blog.list')->with('posts', $posts);
     }
 
@@ -93,9 +95,13 @@ class BlogController extends Controller
      */
     public function edit($id)
     {
-        $blogPost = Blog::find($id);
+        $blogPost = Blog::with('author', 'categories')->where('id', $id)->first();
+        $categories = Category::all();
         $users = User::all();
-        return view('admin.blog.edit')->with(['blogPost' => $blogPost, 'users' => $users]);
+        return view('admin.blog.edit')->with([
+            'blogPost' => $blogPost,
+            'users' => $users,
+            'categories' => $categories]);
     }
 
     /**
@@ -132,11 +138,32 @@ class BlogController extends Controller
 
         $blogPost = Blog::find($id);
         $blogPost->fill($data);
+
+        $blogPost->categories()->sync($data['selectedCategories'] ?? []);
+
+        if(isset($data['availableCategories'])) {
+            foreach($data['availableCategories'] as $category) {
+                $check = Category::where('name', $category)->first();
+                if(empty($check)) {
+                    $this->createCategory($category);
+                }
+            }
+        }
+
         $blogPost->save();
 
         return redirect('auth/blog/'. $blogPost->id .'/edit')
             ->with('successMessage', 'Blog Post has been updated!');
 
+    }
+
+    public function createCategory($name) {
+        $categorySlug = Str::slug($name, '-');
+        $category = Category::create([
+           'name' => $name,
+           'slug' => $categorySlug
+        ]);
+        $category->save();
     }
 
     /**
