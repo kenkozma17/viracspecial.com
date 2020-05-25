@@ -3,7 +3,7 @@
         <div class="swiper-container swiper-fullscreen fw">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="slider-image" style="background-image: url(/images/Slide-2.jpg)"></div>
+                    <div class="slider-image" style="background-image: url(/images/Slide-2.JPG)"></div>
                 </div>
                 <div class="swiper-slide">
                     <div class="slider-image" style="background-image: url(/images/Slide-3.jpg)"></div>
