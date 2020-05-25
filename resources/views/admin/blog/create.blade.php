@@ -1,8 +1,7 @@
 @extends('layouts.app')
 @section('content')
 @extends('auth.nav')
-<div class="content-mt">
-    <div class="admin blog">
+    <div class="admin blog content-mt">
         <div class="container mt-lg-5">
             <div class="card">
                 <div class="card-body">
@@ -23,5 +22,4 @@
             </div>
         </div>
     </div>
-</div>
 @endsection
