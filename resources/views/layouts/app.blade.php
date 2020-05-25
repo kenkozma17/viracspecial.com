@@ -21,9 +21,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <body>
     <div id="app">
-        @if(!Auth::check() && !Request::is('login'))
         <navigation></navigation>
-        @endif
         {{-- Form Messages --}}
         @include('admin.notifications.form-messages')
 
@@ -35,6 +33,7 @@
     {{--  Jquery for Admin Side  --}}
     @if (Auth::check())
         <script src="{{ config('cdn.jquery') }}"></script>
+        @include('auth.nav')
     @endif
 </body>
 </html>

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 @extends('auth.nav')
-<div class="admin blog edit">
+<div class="admin blog edit content-mt">
     <div class="container mt-lg-5 mb-lg-5">
         <div class="card">
             <div class="card-body">

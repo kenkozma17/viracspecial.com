@@ -17,7 +17,7 @@ class BlogController extends Controller
     }
 
     public function singlePost($slug) {
-        $blogPost = Blog::where('url_slug', $slug)->first();
+        $blogPost = Blog::with('categories')->where('url_slug', $slug)->first();
 
         return view('pages.blog.article')->with('blogPost', $blogPost);
     }

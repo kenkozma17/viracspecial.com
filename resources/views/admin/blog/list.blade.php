@@ -1,8 +1,8 @@
 @extends('layouts.app')
 @section('content')
 @extends('auth.nav')
-    <div class="admin blog">
-        <div class="container mt-lg-5">
+    <div class="admin blog content-mt">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <h2>Blog Posts</h2></div>
