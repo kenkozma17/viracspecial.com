@@ -1,5 +1,5 @@
 @if ($errors->any())
-    <div class="container mt-lg-5">
+    <div class="container content-mt">
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
             <ul>
                 @foreach ($errors->all() as $error)
