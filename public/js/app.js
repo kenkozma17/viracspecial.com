@@ -47230,7 +47230,7 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("div", { staticClass: "content" }, [
               _vm._v(
-                "\n                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,\n                    when an unknown printer took a galley of type and scrambled it to make a type\n                    specimen book. It has survived not only five centuries, but also the leap\n                    into electronic typesetting, remaining essentially unchanged. It was popularised\n                    in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,\n                    and more recently with desktop publishing software like Aldus PageMaker including\n                    versions of Lorem Ipsum.\n                "
+                "\n                    Virac Special is a publication dedicated to the town of Virac,\n                    featuring various accommodations, restaurants, local crafts, places\n                    to see, transportation data and a brief summary of current events.\n                    The publication’s goal is to provide assistance to visiting tourists,\n                    simultaneously educating the local residents of what is continuing\n                    to evolve in the hospitality industry.\n                "
               )
             ])
           ]),
@@ -59955,6 +59955,7 @@ var SwiperSlider = /*#__PURE__*/function () {
     key: "fullSlider",
     value: function fullSlider(el) {
       var swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](el, {
+        loop: true,
         centeredSlides: true,
         speed: 1000,
         navigation: {
@@ -59962,7 +59963,7 @@ var SwiperSlider = /*#__PURE__*/function () {
           prevEl: '.swiper-button-prev'
         },
         autoplay: {
-          delay: 6000,
+          delay: 5000,
           disableOnInteraction: true,
           stopOnLastSlide: true
         }

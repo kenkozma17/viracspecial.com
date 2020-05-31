@@ -17,6 +17,7 @@ export default class SwiperSlider {
 
     fullSlider(el) {
         let swiper = new Swiper(el, {
+            loop: true,
             centeredSlides: true,
             speed: 1000,
             navigation: {
@@ -24,7 +25,7 @@ export default class SwiperSlider {
                 prevEl: '.swiper-button-prev',
             },
             autoplay: {
-                delay: 6000,
+                delay: 5000,
                 disableOnInteraction: true,
                 stopOnLastSlide: true
             },
