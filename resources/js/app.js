@@ -4,12 +4,14 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 import SwiperSlider from "./SwiperSlider";
+import SmoothScroll from "./SmoothScroll";
 
 require('./bootstrap');
 window.Vue = require('vue');
 
 document.addEventListener("DOMContentLoaded", function() {
     window.Swiper = new SwiperSlider();
+    window.SmoothScroll = new SmoothScroll();
 });
 
 /**

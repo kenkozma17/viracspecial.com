@@ -1,8 +1,8 @@
 <template>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-5">
+                <div class="col-sm-5">
                     <div class="title">About</div>
                     <div class="content">
                         Virac Special is a publication dedicated to the town of Virac,
@@ -13,7 +13,7 @@
                         to evolve in the hospitality industry.
                     </div>
                 </div>
-                <div class="col-7">
+                <div class="col-sm-7 mt-4">
                     <img class="image" src="/images/About.jpg">
                 </div>
             </div>

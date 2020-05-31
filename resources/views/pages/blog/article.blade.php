@@ -6,7 +6,7 @@
             <h2 class="title">{{ $blogPost->title }}</h2>
             <div class="details">
                 <div class="date">{{ $blogPost->post_date }}</div>
-                <div class="author">{{ $blogPost->author->name }}</div>
+                <div class="author">{{ $blogPost->local_author ?? $blogPost->author->name }}</div>
             </div>
             <br>
             <div class="categories text-center">

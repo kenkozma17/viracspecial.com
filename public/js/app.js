@@ -47222,10 +47222,10 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("section", { staticClass: "about" }, [
+    return _c("section", { staticClass: "about", attrs: { id: "about" } }, [
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "row align-items-center" }, [
-          _c("div", { staticClass: "col-5" }, [
+          _c("div", { staticClass: "col-sm-5" }, [
             _c("div", { staticClass: "title" }, [_vm._v("About")]),
             _vm._v(" "),
             _c("div", { staticClass: "content" }, [
@@ -47235,7 +47235,7 @@ var staticRenderFns = [
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "col-7" }, [
+          _c("div", { staticClass: "col-sm-7 mt-4" }, [
             _c("img", {
               staticClass: "image",
               attrs: { src: "/images/About.jpg" }
@@ -47280,14 +47280,142 @@ var staticRenderFns = [
           _c("div", { staticClass: "swiper-slide" }, [
             _c("div", {
               staticClass: "slider-image",
-              staticStyle: { "background-image": "url(/images/Slide-2.JPG)" }
+              staticStyle: { "background-image": "url(/images/Slides/Air.jpg)" }
             })
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "swiper-slide" }, [
             _c("div", {
               staticClass: "slider-image",
-              staticStyle: { "background-image": "url(/images/Slide-3.jpg)" }
+              staticStyle: {
+                "background-image": "url(/images/Slides/Abaca.jpg)"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide" }, [
+            _c("div", {
+              staticClass: "slider-image",
+              staticStyle: {
+                "background-image": "url(/images/Slides/Batag.jpg)"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide" }, [
+            _c("div", {
+              staticClass: "slider-image",
+              staticStyle: {
+                "background-image": "url(/images/Slides/Beach-2.jpg)"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide" }, [
+            _c("div", {
+              staticClass: "slider-image",
+              staticStyle: {
+                "background-image": "url(/images/Slides/Boulevard.jpg)"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide" }, [
+            _c("div", {
+              staticClass: "slider-image",
+              staticStyle: {
+                "background-image": "url(/images/Slides/Capitol.jpg)"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide" }, [
+            _c("div", {
+              staticClass: "slider-image",
+              staticStyle: {
+                "background-image": "url(/images/Slides/Jesus.jpg)"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide" }, [
+            _c("div", {
+              staticClass: "slider-image",
+              staticStyle: {
+                "background-image": "url(/images/Slides/Magnesia.jpg)"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide" }, [
+            _c("div", {
+              staticClass: "slider-image",
+              staticStyle: {
+                "background-image": "url(/images/Slides/Mamangal.jpg)"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide" }, [
+            _c("div", {
+              staticClass: "slider-image",
+              staticStyle: {
+                "background-image": "url(/images/Slides/Marilima.jpg)"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide" }, [
+            _c("div", {
+              staticClass: "slider-image",
+              staticStyle: {
+                "background-image": "url(/images/Slides/Rocks.jpg)"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide" }, [
+            _c("div", {
+              staticClass: "slider-image",
+              staticStyle: {
+                "background-image": "url(/images/Slides/Swamp.jpg)"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide" }, [
+            _c("div", {
+              staticClass: "slider-image",
+              staticStyle: {
+                "background-image": "url(/images/Slides/Swamp-2.jpg)"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide" }, [
+            _c("div", {
+              staticClass: "slider-image",
+              staticStyle: {
+                "background-image": "url(/images/Slides/Twin-Rocks.jpg)"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide" }, [
+            _c("div", {
+              staticClass: "slider-image",
+              staticStyle: {
+                "background-image": "url(/images/Slides/Twin-Rocks-2.jpg)"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide" }, [
+            _c("div", {
+              staticClass: "slider-image",
+              staticStyle: {
+                "background-image": "url(/images/Slides/Twin-Rocks-3.jpg)"
+              }
             })
           ])
         ]),
@@ -47298,14 +47426,18 @@ var staticRenderFns = [
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "main-title-container" }, [
-        _c("a", { staticClass: "explore-btn", attrs: { href: "#" } }, [
-          _c("div", { staticClass: "title" }, [_vm._v("Explore Virac!")]),
-          _vm._v(" "),
-          _c("img", {
-            staticClass: "arrow point-down",
-            attrs: { src: "/svg/arrow.svg" }
-          })
-        ])
+        _c(
+          "a",
+          { staticClass: "anchor explore-btn", attrs: { href: "#about" } },
+          [
+            _c("div", { staticClass: "title" }, [_vm._v("Explore Virac!")]),
+            _vm._v(" "),
+            _c("img", {
+              staticClass: "arrow point-down",
+              attrs: { src: "/svg/arrow.svg" }
+            })
+          ]
+        )
       ])
     ])
   }
@@ -47436,7 +47568,7 @@ var staticRenderFns = [
         [
           _c("div", { staticClass: "top-footer container" }, [
             _c("div", { staticClass: "row align-items-center" }, [
-              _c("div", { staticClass: "col-3 text-left" }, [
+              _c("div", { staticClass: "col-sm-3 text-left contact" }, [
                 _c("div", { staticClass: "title" }, [_vm._v("Contact")]),
                 _vm._v(" "),
                 _c("div", { staticClass: "mail" }, [
@@ -47448,14 +47580,14 @@ var staticRenderFns = [
                 ])
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "col-6 text-center" }, [
+              _c("div", { staticClass: "col-sm-6 text-center logo" }, [
                 _c("img", {
                   staticStyle: { width: "16em" },
                   attrs: { src: "/images/Logo.png" }
                 })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "col-3 text-right" }, [
+              _c("div", { staticClass: "col-sm-3 text-right social-media" }, [
                 _c("img", {
                   staticClass: "sm-icon",
                   attrs: { src: "/svg/fb.svg" }
@@ -59912,6 +60044,58 @@ webpackContext.id = "./resources/js sync recursive \\.vue$/";
 
 /***/ }),
 
+/***/ "./resources/js/SmoothScroll.js":
+/*!**************************************!*\
+  !*** ./resources/js/SmoothScroll.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SmoothScroll; });
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var SmoothScroll = /*#__PURE__*/function () {
+  function SmoothScroll() {
+    _classCallCheck(this, SmoothScroll);
+
+    this.linkElem = $('a[href^="#"]');
+    this.setEventListeners();
+  }
+
+  _createClass(SmoothScroll, [{
+    key: "setEventListeners",
+    value: function setEventListeners() {
+      var _this = this;
+
+      this.linkElem.on('click', function (e) {
+        return _this.smoothScroll(e);
+      });
+    }
+  }, {
+    key: "smoothScroll",
+    value: function smoothScroll(e) {
+      e.preventDefault();
+      var target = e.currentTarget.hash;
+      $('html, body').stop().animate({
+        scrollTop: $(target).offset().top - 70
+      }, 1000);
+      return false;
+    }
+  }]);
+
+  return SmoothScroll;
+}();
+
+
+
+/***/ }),
+
 /***/ "./resources/js/SwiperSlider.js":
 /*!**************************************!*\
   !*** ./resources/js/SwiperSlider.js ***!
@@ -59973,11 +60157,16 @@ var SwiperSlider = /*#__PURE__*/function () {
     key: "multiSlider",
     value: function multiSlider(el) {
       var swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](el, {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 30,
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev'
+        },
+        breakpoints: {
+          769: {
+            slidesPerView: 3
+          }
         }
       });
     }
@@ -60000,6 +60189,7 @@ var SwiperSlider = /*#__PURE__*/function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _SwiperSlider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SwiperSlider */ "./resources/js/SwiperSlider.js");
+/* harmony import */ var _SmoothScroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SmoothScroll */ "./resources/js/SmoothScroll.js");
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -60007,11 +60197,13 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 
+
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 document.addEventListener("DOMContentLoaded", function () {
   window.Swiper = new _SwiperSlider__WEBPACK_IMPORTED_MODULE_0__["default"]();
+  window.SmoothScroll = new _SmoothScroll__WEBPACK_IMPORTED_MODULE_1__["default"]();
 });
 /**
  * The following block of code may be used to automatically register your

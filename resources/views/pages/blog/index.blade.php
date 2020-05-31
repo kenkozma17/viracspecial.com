@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <div class="container blog list content-mt">
-        @if(!empty($blogPost))
+        @if(count($blogPosts))
             <div class="title">Latest blog posts</div>
             <div class="row">
                 @foreach($blogPosts as $post)

@@ -11608,6 +11608,7 @@ a.text-dark:focus {
 }
 
 .navigation {
+  background: rgba(0, 0, 0, 0.3);
   position: fixed;
   width: 100%;
   top: 0;
@@ -11633,12 +11634,24 @@ a.text-dark:focus {
   justify-content: flex-end;
 }
 
+@media (max-width: 768px) {
+  .navigation .nav-item-container {
+    margin-right: 2em;
+  }
+}
+
 .navigation .nav-item {
   text-decoration: none;
   color: white;
   margin: 0 0 0 3.5em;
   font-size: 1.1em;
   font-family: "Muli", Sans-Serif;
+}
+
+@media (max-width: 768px) {
+  .navigation .nav-item {
+    margin: 0 0 0 1.5em;
+  }
 }
 
 .admin .image-preview {
@@ -11672,12 +11685,20 @@ a.text-dark:focus {
   background-position: top;
 }
 
+@media (max-width: 768px) {
+  .footer .contact,
+  .footer .logo,
+  .footer .social-media {
+    text-align: center !important;
+  }
+}
+
 .footer .title {
   font: 2em "Patua One", Sans-Serif;
 }
 
 .footer .sm-icon {
-  padding-left: 1.5em;
+  padding: 0 0.7em;
 }
 
 a:hover {

@@ -34,12 +34,17 @@ export default class SwiperSlider {
 
     multiSlider(el) {
         let swiper = new Swiper(el, {
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 30,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+            breakpoints: {
+                769: {
+                    slidesPerView: 3
+                },
+            }
         });
     }
 }
