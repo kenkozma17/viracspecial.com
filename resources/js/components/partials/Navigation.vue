@@ -11,6 +11,7 @@
                     <div class="nav-item-container">
                         <a href="/" class="nav-item">Home</a>
                         <a href="/vs-blog" class="nav-item">Blog</a>
+                        <a href="/destinations" class="nav-item">Destinations</a>
                     </div>
                 </div>
             </div>

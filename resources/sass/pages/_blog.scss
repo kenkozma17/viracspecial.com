@@ -11,6 +11,9 @@
     width: 100%;
     min-height: 400px;
     position: relative;
+    @include mq-max() {
+      min-height: 250px;
+    }
   }
 
   .read-more {
@@ -21,17 +24,32 @@
     background: white;
     color: #000;
     border-radius: 30px;
+    @include mq-max() {
+      font-size: 0.8em;
+    }
   }
 
   .title-container {
     position: absolute;
     bottom: 1.5em; left: 2em;
     color: #fff;
+    @include mq-max() {
+      left: 1em;
+      bottom: 1em;
+    }
     .title {
       font: 1.8em $secondary-font;
+      @include mq-max() {
+        font-size: 1.3em;
+      }
     }
     .title, .author {
       position: relative;
+    }
+    .author {
+      @include mq-max() {
+        font-size: 0.9em;
+      }
     }
   }
 
@@ -50,6 +68,11 @@
     padding: 0 5em;
     background: #fff;
     margin: 0 3em;
+    border-radius: 10px;
+    @include mq-max() {
+      margin: 0 0.5em;
+      padding: 0 0.8em;
+    }
     .title {
       padding: 1em 0 0.5em 0;
       text-align: center;

@@ -11458,12 +11458,12 @@ a.text-dark:focus {
 .home .main-title-container .title {
   font: 3em "Patua One", Sans-Serif;
   letter-spacing: 1px;
-  font-size: 1.6em;
+  font-size: 1em;
 }
 
 @media screen and (min-width: 449px) {
   .home .main-title-container .title {
-    font-size: calc(1.6em + 1.4 * ((100vw - 449px) / 320));
+    font-size: calc(1em + 2 * ((100vw - 449px) / 320));
   }
 }
 
@@ -11475,6 +11475,12 @@ a.text-dark:focus {
 
 .home .main-title-container .arrow {
   width: 2em;
+}
+
+@media (max-width: 768px) {
+  .home .main-title-container .arrow {
+    width: 1em;
+  }
 }
 
 .home .main-title-container .arrow.point-down {
@@ -11531,6 +11537,12 @@ a.text-dark:focus {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .blog.list .image {
+    min-height: 250px;
+  }
+}
+
 .blog.list .read-more {
   position: absolute;
   top: 1em;
@@ -11541,6 +11553,12 @@ a.text-dark:focus {
   border-radius: 30px;
 }
 
+@media (max-width: 768px) {
+  .blog.list .read-more {
+    font-size: 0.8em;
+  }
+}
+
 .blog.list .title-container {
   position: absolute;
   bottom: 1.5em;
@@ -11548,13 +11566,32 @@ a.text-dark:focus {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .blog.list .title-container {
+    left: 1em;
+    bottom: 1em;
+  }
+}
+
 .blog.list .title-container .title {
   font: 1.8em "Patua One", Sans-Serif;
+}
+
+@media (max-width: 768px) {
+  .blog.list .title-container .title {
+    font-size: 1.3em;
+  }
 }
 
 .blog.list .title-container .title,
 .blog.list .title-container .author {
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .blog.list .title-container .author {
+    font-size: 0.9em;
+  }
 }
 
 .blog.list .pagination {
@@ -11571,6 +11608,14 @@ a.text-dark:focus {
   padding: 0 5em;
   background: #fff;
   margin: 0 3em;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .blog.detail-page .article {
+    margin: 0 0.5em;
+    padding: 0 0.8em;
+  }
 }
 
 .blog.detail-page .article .title {
@@ -11605,6 +11650,14 @@ a.text-dark:focus {
 
 .image {
   width: 100%;
+}
+
+.destinations #map {
+  min-height: 500px;
+}
+
+.destinations .title {
+  font: 2em "Patua One", Sans-Serif;
 }
 
 .navigation {

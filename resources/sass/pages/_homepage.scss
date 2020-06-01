@@ -10,10 +10,13 @@
     .title {
       font: 3em $secondary-font;
       letter-spacing: 1px;
-      @include fluid-type($xsmall-max-bp, $small-min-bp, 1.6em, 3em);
+      @include fluid-type($xsmall-max-bp, $small-min-bp, 1em, 3em);
     }
     .arrow {
       width: 2em;
+      @include mq-max() {
+        width: 1em;
+      }
       &.point-down {
         transform: rotate(90deg);
       }
