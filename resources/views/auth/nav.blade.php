@@ -34,6 +34,9 @@
                             <a class="dropdown-item" href="/auth/blog">
                                 {{ __('Blog') }}
                             </a>
+                            <a class="dropdown-item" href="/auth/location">
+                                {{ __('Locations') }}
+                            </a>
 
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();

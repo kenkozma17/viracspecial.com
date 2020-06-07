@@ -174,6 +174,11 @@ class BlogController extends Controller
      */
     public function destroy($id)
     {
-        //
+        try {
+            Blog::destroy($id);
+            return redirect('/auth/blog');
+        } catch(\Exception $ex) {
+
+        }
     }
 }
