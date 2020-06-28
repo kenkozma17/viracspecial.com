@@ -34,7 +34,7 @@
                                 </form>
                             </th>
                             <td>{{ $location->title }}</td>
-                            <td></td>
+                            <td>{{ $location->address }}</td>
                             <td>{!! $location->published ? '<span class="badge badge-pill badge-success">Yes</span>' : '<span class="badge badge-pill badge-danger">No</span>' !!}</td>
                         </tr>
                     @endforeach

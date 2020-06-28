@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Location;
 use Illuminate\Http\Request;
 
 class DestinationsController extends Controller
@@ -13,7 +14,8 @@ class DestinationsController extends Controller
      */
     public function index()
     {
-        return view('pages.destinations.index');
+        $locations = Location::orderBy('title', 'desc')->where('published', 1)->get();
+        return view('pages.destinations.index')->with('locations', $locations);
     }
 
     /**
