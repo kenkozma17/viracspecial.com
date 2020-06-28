@@ -11,14 +11,30 @@
     padding: 0.5em 0;
     position: relative;
     overflow-y: scroll;
+    @include mq-max() {
+      margin: 0 0 3em 0;
+    }
     .image {
       width: 100%;
       height: 100%;
       background-position: center;
       background-size: cover;
     }
-    .card-title, .image {
+    .card-title, .image, .card-content {
       cursor: pointer;
+    }
+
+    .card-content {
+      transition: 0.5s ease background-color;
+      &:hover {
+        background-color: beige;
+      }
+    }
+
+    .card-title {
+      &:hover {
+        text-decoration: underline;
+      }
     }
     //.bottom {
     //  position: absolute;

@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
-    <destinations class="content-mt" :locations='@json($locations)'></destinations>
+    <destinations class="content-mt"
+          :locations='@json($locations)'
+          :google-api-key='@json(config('services.google.key'))'
+    ></destinations>
 @endsection
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCgfYv0ufxgizhpYSHibG4JENvJpchrGE"
-            async defer></script>
