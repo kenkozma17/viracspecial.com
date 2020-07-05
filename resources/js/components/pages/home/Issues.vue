@@ -4,21 +4,36 @@
             <div class="title">Newsletter Issues</div>
             <div class="swiper-container swiper-multi">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="image" style="background-image: url('/images/Issues/Issue-1.jpg')"></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="image" style="background-image: url('/images/Issues/Issue-2.jpg')"></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div  class="image" style="background-image: url('/images/Issues/Issue-3.jpg')"></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div  class="image" style="background-image: url('/images/Issues/Issue-4.jpg')"></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div  class="image" style="background-image: url('/images/Issues/Issue-5.jpg')"></div>
-                    </div>
+                    <a class="swiper-slide" target="_blank" href="https://drive.google.com/file/d/1sBUkFeD5EaqRCJtxFJoZkVjs4D3DOsvH/view?usp=sharing">
+                        <div class="image" style="background-image: url('/images/Issues/Issue1.jpg')">
+                            <span class="issue-date">July - Sept 2018</span>
+                            <img class="issue-logo" src="/images/Logo.png">
+                        </div>
+                    </a>
+                    <a class="swiper-slide" target="_blank" href="https://drive.google.com/file/d/1ZoLKD4TM652BBQHR6uG3tCyIlEEqKiy5/view?usp=sharing">
+                        <div class="image" style="background-image: url('/images/Issues/Issue2.jpg')">
+                            <span class="issue-date">Oct - Dec 2018</span>
+                            <img class="issue-logo" src="/images/Logo.png">
+                        </div>
+                    </a>
+                    <a class="swiper-slide" target="_blank" href="https://drive.google.com/file/d/1sn1NyEzU3QGtiS0KIm8EZgr_AvkYeW23/view?usp=sharing">
+                        <div  class="image" style="background-image: url('/images/Issues/Issue3.jpg')">
+                            <span class="issue-date">Jan - Mar 2019</span>
+                            <img class="issue-logo" src="/images/Logo.png">
+                        </div>
+                    </a>
+                    <a class="swiper-slide" target="_blank" href="https://drive.google.com/file/d/1vfq5pztubPte5PXFnxXRuN7bGN-rxGtM/view?usp=sharing">
+                        <div  class="image" style="background-image: url('/images/Issues/Issue4.jpg')">
+                            <span class="issue-date">Apr - Sept 2019</span>
+                            <img class="issue-logo" src="/images/Logo.png">
+                        </div>
+                    </a>
+                    <a class="swiper-slide" target="_blank" href="https://drive.google.com/file/d/14jr9gKsZDeoMjWfeof0YVn4dSZzk_GXR/view?usp=sharing">
+                        <div  class="image" style="background-image: url('/images/Issues/Issue5.jpg')">
+                            <span class="issue-date">Oct - Dec 2019</span>
+                            <img class="issue-logo" src="/images/Logo.png">
+                        </div>
+                    </a>
                 </div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>

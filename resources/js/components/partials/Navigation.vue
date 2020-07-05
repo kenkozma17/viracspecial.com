@@ -2,7 +2,7 @@
     <nav class="navigation">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col">
+                <div class="col logo-container">
                     <a href="/">
                         <img src="/images/Logo.png" class="logo" alt="Virac Special Logo">
                     </a>

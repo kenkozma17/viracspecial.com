@@ -5,8 +5,12 @@
                 <div class="row align-items-center">
                     <div class="col-sm-3 text-left contact">
                         <div class="title">Contact</div>
-                        <div class="mail">pattie_kozma@yahoo.com</div>
-                        <div class="phone">+(63) 901 123 1234</div>
+                        <div>
+                            <a class="mail" href="mailto:pattie_kozma@yahoo.com">pattie_kozma@yahoo.com</a>
+                        </div>
+                        <div>
+                            <a class="phone" href="tel:639468139361">+(63) 946 813 9361</a>
+                        </div>
                     </div>
                     <div class="col-sm-6 text-center logo">
                         <img style="width: 16em" src="/images/Logo.png">

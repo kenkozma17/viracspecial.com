@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Virac Special | Blog')
 @section('content')
     <div class="container blog detail-page mb-5 content-mt">
         <img class="cover-image" src="{{ $blogPost->image }}">

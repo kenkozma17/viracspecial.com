@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Virac Special | Blog')
 @section('content')
     <div class="container blog list content-mt">
         @if(count($blogPosts))

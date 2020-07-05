@@ -13,3 +13,21 @@ body {
     max-width: 1240px;
   }
 }
+
+.issues {
+  .issue-date {
+    background: rgba(0,0,0,0.5);
+    padding: 0.5em;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    color: white;
+    border-radius: 7px;
+  }
+  .issue-logo {
+    position: absolute;
+    bottom: -0.1em;
+    right: 0.5em;
+    width: 100px;
+  }
+}
