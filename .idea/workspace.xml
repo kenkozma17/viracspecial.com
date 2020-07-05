@@ -2,29 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec600aa2-85b4-46ca-b85a-3d741c9e5760" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/Issues/Issue1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Issues/Issue2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Issues/Issue3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Issues/Issue4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Issues/Issue5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Issues/Issue-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Issues/Issue-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Issues/Issue-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Issues/Issue-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Issues/Issue-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/pages/home/Issues.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/pages/home/Issues.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/partials/Foot.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/partials/Foot.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/partials/Navigation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/partials/Navigation.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/components/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/components/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/components/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/components/_navigation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/blog/article.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/blog/article.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/pages/destinations/Destinations.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/pages/destinations/Destinations.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/blog/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/blog/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/destinations/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/destinations/index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,103 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/sass/components/_navigation.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="767">
-              <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/destinations/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/Homepage.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/pages/home/Issues.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#div#1;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/partials/Foot.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="8" column="42" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="42" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#footer#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#footer#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/blog/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="1" column="41" selection-start-line="1" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/blog/article.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/sass/main.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/sass/components/_footer.scss">
+        <entry file="file://$PROJECT_DIR$/resources/js/components/pages/destinations/Destinations.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+            <state relative-caret-position="293">
+              <caret line="79" column="75" selection-start-line="79" selection-start-column="75" selection-end-line="79" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -226,17 +113,17 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/config/services.php" />
         <option value="$PROJECT_DIR$/resources/sass/pages/_destinations.scss" />
-        <option value="$PROJECT_DIR$/resources/js/components/pages/destinations/Destinations.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/partials/Navigation.vue" />
         <option value="$PROJECT_DIR$/resources/sass/components/_navigation.scss" />
         <option value="$PROJECT_DIR$/resources/sass/main.scss" />
         <option value="$PROJECT_DIR$/resources/js/components/pages/home/Issues.vue" />
-        <option value="$PROJECT_DIR$/resources/views/pages/blog/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/blog/article.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/destinations/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/components/partials/Foot.vue" />
         <option value="$PROJECT_DIR$/resources/sass/components/_footer.scss" />
+        <option value="$PROJECT_DIR$/resources/views/pages/blog/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/js/components/pages/destinations/Destinations.vue" />
       </list>
     </option>
   </component>
@@ -465,12 +352,12 @@
       <workItem from="1591886039388" duration="265000" />
       <workItem from="1593343882111" duration="6194000" />
       <workItem from="1593355623941" duration="3919000" />
-      <workItem from="1593905711649" duration="3103000" />
+      <workItem from="1593905711649" duration="4842000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120863000" />
+    <option name="totallyTimeSpent" value="122602000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="974" extended-state="6" />
@@ -784,13 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/pages/destinations/Destinations.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="40" column="68" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DestinationsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -850,24 +730,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/blog/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="1" column="41" selection-start-line="1" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/blog/article.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/destinations/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -891,8 +757,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/components/_footer.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        <state relative-caret-position="237">
+          <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/blog/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="8" column="52" lean-forward="true" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+          <folding>
+            <element signature="e#405#512#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/destinations/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/pages/destinations/Destinations.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="79" column="75" selection-start-line="79" selection-start-column="75" selection-end-line="79" selection-end-column="75" />
         </state>
       </provider>
     </entry>

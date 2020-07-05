@@ -77,7 +77,7 @@
                                     <br>
                                     <h5>`+ item.title +`</h5>
                                     <p>` + item.content + `</p>
-                                    <p>` + item.address + `</p>
+                                    <p>` + item.address ? item.address : '' + `</p>
                                     <a href="` + item.website + `">Visit Website</a>
                                 </div>
                             </div>
