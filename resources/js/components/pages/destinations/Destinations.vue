@@ -13,8 +13,8 @@
                             <div class="col-md-8 card-content">
                                 <div class="card-body">
                                     <h5 class="card-title" :data-marker-id="index">{{ location.title }}</h5>
-                                    <p class="card-text" v-html="location.limited_content"></p>
-                                    <a :href="location.website" class="card-text"><small class="text-muted">Visit Website</small></a>
+                                    <p :data-marker-id="index" class="card-text" v-html="location.limited_content"></p>
+                                    <a target="_blank" :href="location.website" class="card-text"><small class="text-muted">Visit Website</small></a>
                                 </div>
                             </div>
                         </div>
@@ -75,10 +75,10 @@
                                 <img style="max-width: 100%" src="` + item.image + `" />
                                 <div class="info-wrapper">
                                     <br>
-                                    <h5>`+ item.title +`</h5>
-                                    <p>` + item.content + `</p>
-                                    <p>` + item.address ? item.address : '' + `</p>
-                                    <a href="` + item.website + `">Visit Website</a>
+                                    <h5>${item.title}</h5>
+                                    <p>${item.content}</p>
+                                    <p>${item.address ? item.address : ''}</p>
+                                    <a target="_blank" href="${item.website}">Visit Website</a>
                                 </div>
                             </div>
                             `,
@@ -97,7 +97,7 @@
                 });
 
                 /** Opens infowindow on click from buildings list on sidebar */
-                const cardTitle = document.querySelectorAll('.card-title');
+                const cardTitle = document.querySelectorAll('.card-title, .card-text');
                 if(cardTitle) {
                     cardTitle.forEach((el) => {
                         el.addEventListener('click',(e) => {
