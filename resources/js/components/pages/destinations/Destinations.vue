@@ -14,7 +14,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title" :data-marker-id="index">{{ location.title }}</h5>
                                     <p :data-marker-id="index" class="card-text" v-html="location.limited_content"></p>
-                                    <a target="_blank" :href="location.website" class="card-text"><small class="text-muted">Visit Website</small></a>
+                                    <a target="_blank" :href="location.website" class="card-text" v-if="location.website"><small class="text-muted">Visit Website</small></a>
                                 </div>
                             </div>
                         </div>
@@ -78,7 +78,7 @@
                                     <h5>${item.title}</h5>
                                     <p>${item.content}</p>
                                     <p>${item.address ? item.address : ''}</p>
-                                    <a target="_blank" href="${item.website}">Visit Website</a>
+                                    <a target="_blank" href="${item.website}">${item.website ? 'Visit Website' : ''}</a>
                                 </div>
                             </div>
                             `,
