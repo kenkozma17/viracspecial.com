@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <meta property="og:url" content="https://viracspecial.com" />
+    <meta property="og:title" content="Virac Special" />
+    <meta property="og:description" content="What to find in Virac, a small, rustic and quaint town on the coast of Catanduanes Island.  Explore its charm, get a glimpse of its culture and people" />
+    <meta property="og:image" content="/images/Slides/Boulevard.jpg" />
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
