@@ -34,6 +34,12 @@
                             <img class="issue-logo" src="/images/Logo.png">
                         </div>
                     </a>
+                    <a class="swiper-slide" target="_blank" href="https://drive.google.com/file/d/14_G2lYo5ShmQemyAMs31pn9gU-h_x8jA/view">
+                        <div  class="image" style="background-image: url('/images/Issues/Issue5.jpg')">
+                            <span class="issue-date">January - June 2021</span>
+                            <img class="issue-logo" src="/images/Logo.png">
+                        </div>
+                    </a>
                 </div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
