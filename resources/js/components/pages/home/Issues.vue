@@ -4,6 +4,12 @@
             <div class="title">Newsletter Issues</div>
             <div class="swiper-container swiper-multi">
                 <div class="swiper-wrapper">
+                    <a class="swiper-slide" target="_blank" href="https://drive.google.com/file/d/1l3cIswtcUCVP4NQAZN2Rtc-jv45VBaN5/view?usp=sharing">
+                        <div  class="image" style="background-image: url('/images/Issues/Issue7.png')">
+                            <span class="issue-date">January - June 2021</span>
+                            <img class="issue-logo" src="/images/Logo.png">
+                        </div>
+                    </a>
                     <a class="swiper-slide" target="_blank" href="https://drive.google.com/file/d/14_G2lYo5ShmQemyAMs31pn9gU-h_x8jA/view">
                         <div  class="image" style="background-image: url('/images/Issues/Issue6.png')">
                             <span class="issue-date">January - June 2021</span>
