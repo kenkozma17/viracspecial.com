@@ -5,8 +5,8 @@
             <div class="swiper-container swiper-multi">
                 <div class="swiper-wrapper">
                     <a class="swiper-slide" target="_blank" href="https://drive.google.com/file/d/1l3cIswtcUCVP4NQAZN2Rtc-jv45VBaN5/view?usp=sharing">
-                        <div  class="image" style="background-image: url('/images/Issues/Issue7.png')">
-                            <span class="issue-date">January - June 2021</span>
+                        <div  class="image" style="background-image: url('/images/Issues/Issue7.jpg')">
+                            <span class="issue-date">January - March 2022</span>
                             <img class="issue-logo" src="/images/Logo.png">
                         </div>
                     </a>
